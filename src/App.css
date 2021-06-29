@@ -1,38 +1,373 @@
-.App {
+*{
+  font-family: 'Benne', serif;
+  /* margin: auto; */
+}
+.App{
+  width:100%;
+  height:fit-content;
+}
+
+
+.header{
+  width:100%;
+  height:100px;
+  background-color:white;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 2px 2px black;
+  position: fixed;
+  text-transform: uppercase;
+  z-index: 50;
+
+}
+
+.flex{
+  display:flex;
+}
+.column{
+  flex-direction: row;
+}
+h2{
+  color:#0059a7;
+}
+p{
+  letter-spacing: 3px;
+  font-size: large;
+}
+a{
+    font-weight: bolder;
+    color:rgba(0,0, 0, 0.5);
+    text-decoration: none;
+}
+.body{
+  position: relative;
+  top: 100px;
+  width:100%;
+  height: 100%;
+}
+.home-pic{
+  width:100%;
+  height: 600px;
+  
+  background-size: cover;
+  
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color:white;
+  text-shadow: 0px 0px 5px rgb(37, 6, 6);
+  text-transform: capitalize;
   text-align: center;
+  
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.hiddenNav{
+  background:white;
+  width: 50%;
+  right:0%;
+  height: 100px;
   display: flex;
   flex-direction: column;
+  position: fixed;
+  padding:2% 0;
+  justify-content: space-between;
   align-items: center;
+  z-index: 500;
+}
+.home-pic span{
+  font-size: 50px;
+  font-weight:700 ;
+}
+.footer{
+  width:100%;
+  position: relative;
+  padding: 5% 0%;
+  background-color: #0059a7;
+  flex-direction: column;
+  bottom: 0%;
+  height: fit-content;
+  margin-top:10%;
+  color:white;
+  display: flex;
+  font-weight: bold;
+  justify-content: space-between;
+
+}
+.nav{
+  width: 20%;
+  display:flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  margin:30px;
+  /* margin-top: 15%; */
+  
+}
+.address{
+  width:20%;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10%;
+}
+
+.foot-content{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.content{
+  width:100%;
+  height: fit-content;
+}
+.about-us{
+  display: flex;
+  width: 100%;
+  height: 50%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.pic{
+  height:50%;
+  width:90%;
+  display: flex;
+  justify-content: center;
 }
+.pic div{
+  height:100%;
+  width:50%;
+  margin-left: 10%;
+}
+img{
+  width:100%;
+}
+.menu div{
+    background-color: black;
+    width: 20px;
+    height: 2.5px;
+    margin: 3px;
+}
+.menu{
+  display: none; 
+}
+.write-up{
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding:5% 0%;
+  margin-bottom:'10%';
+  margin-left:'10%'
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+}
+.write-up h1{
+  color: #0059a7;
+  font-size: 50px;
+}
+.write-up p{
+  color: rgba(0,0, 0, 0.5);
+  margin-top: 0%;
+}
+.services{
+  width: 100%;
+  display:flex;
+  height: 50%;
+  margin-top: 2%;
+  justify-content: space-between;
+
+}
+.service-list{
+  width:40%;
+  /* margin-left:10%; */
+  display:flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+}
+.services h1{
+  text-transform: uppercase;
+  color: #0059a7;
+  text-align: center;
+}
+ul{
+  width: 100%;
+  justify-self: center;
+}
+li{
+  text-transform: capitalize;
+  color: rgba(0,0, 0, 0.5);
+  margin:2px;
+  font-size: large;
+}
+.service-write{
+  color:white;
+  background-color: #0059a7;
+  width:60%;
+  display:flex;
+  flex-direction: column;
+  height:100%;
+  padding: 5% ;
+}
+.service-write div{
+  font-size:1.5em;
+  text-align:center;
+  font-weight:700;
+  width:80%;
+  display:flex;
+  justify-content:center;
+    align-self:center
+}
+.service-write h3{
+  font-size: 1em;
+}
+.service-write p{
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+.pictures{
+  display:flex;
+  justify-content: space-between;
+}
+.pictures div{
+  width:30%
+}
+.address p{
+    text-transform: capitalize;
+
+ }
+ .project-li{
+  color: #0059a7;
+  font-weight:bold ;
+  width:95%
+ }
+ .project{
+   display: flex;
+    flex-direction: column;
+    padding: 6% 0;
+    width: 100%;
+    height: 100%;
+}
+.project-div{
+  width: 100%;
+   height: 80%;
+    color: white;
+     background:#0059a7;
+     padding:3% 0 ;
+     display:flex;
+     justify-content:center;
+     align-content:center;
+     font-weight:bold;
+     font-size:30px;
+  margin-top:10px
+}
+ 
+@media (max-width:700px) {
+  .address p{
+    font-size: 1em;
+    margin-top: 2%;
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  .top-nav{
+    display: none;
+  }
+  .project{
+    overflow:scroll;
+    height:500px;
+  }
+  .project-li{
+    font-size: 1em;
+    padding:2%
+  }
+.project-div{
+  justify-items: center;
+  text-align: center;
+}
+  ul{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    /* margin-left: 25%; */
+  }
+  .menu{
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .co{
+    display: none;
+  }
+  .header{
+    /* position: relative; */
+  }
+  .body{
+    top:100px
+  }
+  .services{
+    flex-direction: column;
+    position: relative;
+    height: fit-content;
+    width: 100%;
+  }
+  li{
+    margin:2px;
+  }
+  .service-list{
+    width: 100%;
+    display:flex;
+    flex-direction: column; 
+    justify-content: center;
+    padding: 5% 0%;
+  }
+  .service-write{
+    width: 100%;
+    padding: 5% 1%;
+  font-size: 1em;
+
+  }
+  
+.service-write div{
+  font-size: 1em;
+  margin-bottom: 2%;
+}
+.service-write p{
+  font-size: 0.7em;
+}
+ .foot-content{
+   flex-direction: column;
+   
+ }  
+.home-pic span{
+  font-size: 30px;
+}
+
+ .nav{
+   width: 100%;
+   text-align: center;
+   margin-left: auto;
+   flex-direction: revert;
+   justify-content: space-evenly;
+ }
+ .address{
+   width: 100%;
+   font-size: 0.8em;
+   text-align: center;
+
+ }
+
+ 
+ .pictures{
+   flex-direction: column;
+
+ } 
+ .pictures div{
+   width:100%
+ }
+  .pic{
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .pic div{
+    width: 100%;
+    margin-left: 0%;
   }
 }
